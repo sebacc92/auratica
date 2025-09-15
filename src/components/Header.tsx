@@ -1,23 +1,22 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { getLocale, _ } from "compiled-i18n";
+import { _ } from "compiled-i18n";
 
 export default component$(() => {
-  const currentLocale = getLocale();
   const navigation = [
-    { name: _`nav.home`, href: `/${currentLocale}` },
-    { name: _`nav.about`, href: `/${currentLocale}/about-us` },
-    { name: _`nav.projects`, href: `/${currentLocale}/projects` },
-    { name: _`nav.process`, href: `/${currentLocale}/process` },
-    { name: _`nav.contact`, href: `/${currentLocale}/contact` },
+    { name: _`nav.home`, href: "#home" },
+    { name: _`nav.about`, href: "#about" },
+    { name: _`nav.projects`, href: "#projects" },
+    { name: _`nav.process`, href: "#process" },
+    { name: _`nav.contact`, href: "#contact" },
   ];
 
   return (
-    <header class="bg-white shadow">
+    <header class="fixed top-0 w-full z-50 bg-white shadow">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <Link href={`/${currentLocale}`} class="text-xl font-bold text-gray-900">
+            <Link href="#home" class="text-xl font-bold text-gray-900">
               Aurática
             </Link>
           </div>

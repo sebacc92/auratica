@@ -77,3 +77,7 @@
     --transform-press: scale(0.95);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
