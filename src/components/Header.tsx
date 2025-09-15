@@ -5,11 +5,11 @@ import { getLocale, _ } from "compiled-i18n";
 export default component$(() => {
   const currentLocale = getLocale();
   const navigation = [
-    { name: _`Home`, href: `/${currentLocale}` },
-    { name: _`About us`, href: `/${currentLocale}/about-us` },
-    { name: _`Projects`, href: `/${currentLocale}/projects` },
-    { name: _`Process`, href: `/${currentLocale}/process` },
-    { name: _`Contact`, href: `/${currentLocale}/contact` },
+    { name: _`nav.home`, href: `/${currentLocale}` },
+    { name: _`nav.about`, href: `/${currentLocale}/about-us` },
+    { name: _`nav.projects`, href: `/${currentLocale}/projects` },
+    { name: _`nav.process`, href: `/${currentLocale}/process` },
+    { name: _`nav.contact`, href: `/${currentLocale}/contact` },
   ];
 
   return (

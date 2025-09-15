@@ -8,10 +8,10 @@ export default component$(() => {
       <section class="bg-gradient-to-r from-green-600 to-blue-700 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-4xl md:text-6xl font-bold mb-4">
-            {_`Our Projects Process`}
+            {_`projects.title`}
           </h1>
           <p class="text-xl md:text-2xl max-w-3xl mx-auto">
-            {_`From idea to launch in just two weeks. We build strategic websites that drive results.`}
+            {_`projects.heroDesc`}
           </p>
         </div>
       </section>
@@ -26,10 +26,10 @@ export default component$(() => {
                 <span class="text-2xl text-white">1</span>
               </div>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                {_`Book a Call`}
+                {_`projects.stage1Title`}
               </h2>
               <p class="text-gray-600 leading-relaxed">
-                {_`Tell us about your business and we analyze it together to see if it's suitable for development. This free consultation helps us understand your goals and ensure we're the right fit.`}
+                {_`projects.stage1Desc`}
               </p>
             </div>
 
@@ -39,10 +39,10 @@ export default component$(() => {
                 <span class="text-2xl text-white">2</span>
               </div>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                {_`Implementation`}
+                {_`projects.stage2Title`}
               </h2>
               <p class="text-gray-600 leading-relaxed">
-                {_`We implement the system, design, and launch your new strategic website in just two weeks. It's fully ready to generate customers with modern technology and compelling design.`}
+                {_`projects.stage2Desc`}
               </p>
             </div>
 
@@ -52,10 +52,10 @@ export default component$(() => {
                 <span class="text-2xl text-white">3</span>
               </div>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                {_`Results & Support`}
+                {_`projects.stage3Title`}
               </h2>
               <p class="text-gray-600 leading-relaxed">
-                {_`The website starts working for you, attracting, convincing, and converting visitors. We provide monthly visitor reports to track performance and ongoing support.`}
+                {_`projects.stage3Desc`}
               </p>
             </div>
           </div>

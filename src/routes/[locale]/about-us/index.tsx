@@ -8,10 +8,10 @@ export default component$(() => {
       <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-4xl md:text-6xl font-bold mb-4">
-            {_`About Aurática`}
+            {_`about.title`}
           </h1>
           <p class="text-xl md:text-2xl max-w-3xl mx-auto">
-            {_`We craft unique digital experiences that elevate your brand.`}
+            {_`about.heroDesc`}
           </p>
         </div>
       </section>
@@ -22,13 +22,13 @@ export default component$(() => {
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 class="text-3xl font-bold text-gray-900 mb-6">
-                {_`Our Mission`}
+                {_`about.missionTitle`}
               </h2>
               <p class="text-lg text-gray-600 leading-relaxed">
-                {_`At Aurática, we are passionate about creating unique, high-quality digital presences for companies. We combine strong brand identity with modern, efficient technology to help your business stand out in the digital world.`}
+                {_`about.missionDesc1`}
               </p>
               <p class="text-lg text-gray-600 leading-relaxed mt-4">
-                {_`Our team of creative designers and skilled developers works closely with you to bring your vision to life, ensuring every project is tailored to your specific needs and goals.`}
+                {_`about.missionDesc2`}
               </p>
             </div>
             <div class="bg-white rounded-lg shadow-lg p-8">
@@ -46,7 +46,7 @@ export default component$(() => {
       <section class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">
-            {_`What Sets Us Apart`}
+            {_`about.valuesTitle`}
           </h2>
           <div class="grid md:grid-cols-3 gap-8">
             <div class="text-center">
@@ -54,10 +54,10 @@ export default component$(() => {
                 <span class="text-2xl text-white">🎨</span>
               </div>
               <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                {_`Creative Design`}
+                {_`about.creativeDesign`}
               </h3>
               <p class="text-gray-600">
-                {_`Unique visuals that capture your brand's essence.`}
+                {_`about.creativeDesc`}
               </p>
             </div>
             <div class="text-center">
@@ -65,10 +65,10 @@ export default component$(() => {
                 <span class="text-2xl text-white">⚡</span>
               </div>
               <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                {_`Efficient Technology`}
+                {_`about.efficientTech`}
               </h3>
               <p class="text-gray-600">
-                {_`Cutting-edge solutions for optimal performance.`}
+                {_`about.efficientDesc`}
               </p>
             </div>
             <div class="text-center">
@@ -76,10 +76,10 @@ export default component$(() => {
                 <span class="text-2xl text-white">🤝</span>
               </div>
               <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                {_`Client Partnership`}
+                {_`about.clientPartnership`}
               </h3>
               <p class="text-gray-600">
-                {_`Collaborative approach from concept to launch.`}
+                {_`about.clientDesc`}
               </p>
             </div>
           </div>

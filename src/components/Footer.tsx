@@ -11,13 +11,13 @@ export default component$(() => {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="flex justify-between items-center">
           <div class="text-sm">
-            &copy; 2024 Aurática. {_`All rights reserved.`}
+            &copy; 2024 Aurática. {_`footer.copyright`}
           </div>
           <Link
             href={`/${otherLocale}`}
             class="text-sm hover:text-gray-300"
           >
-            {_`Change language`}
+            {_`footer.changeLanguage`}
           </Link>
         </div>
       </div>
