@@ -66,6 +66,13 @@
     "designs.escuelas": "Escuelas",
     "designs.restaurantes": "Restaurantes",
     "designs.cursos": "Cursos",
-    "designs.button": "Consultar por otros tipos de diseños"
+    "designs.button": "Consultar por otros tipos de diseños",
+    "services.process.title": "Nuestro Proceso de Trabajo",
+    "services.stage1.title": "Reserva una Llamada",
+    "services.stage1.desc": "En esta etapa inicial, programamos una llamada para conocer tu negocio en profundidad. Analizamos tus necesidades y objetivos para identificar los elementos clave de tu marca y establecer las bases de un proyecto exitoso.",
+    "services.stage2.title": "Diseño y Desarrollo Web",
+    "services.stage2.desc": "Creamos tu sitio web con un diseño moderno y funcional, utilizando las mejores prácticas de desarrollo. Iteramos continuamente basado en tu feedback hasta que estés completamente satisfecho con el resultado final.",
+    "services.stage3.title": "Estrategia Digital",
+    "services.stage3.desc": "Implementamos una estrategia de SEO optimizada para posicionar tu sitio en los primeros resultados de Google. Mejoramos la velocidad y usabilidad de la página, enfocándonos en convertir visitantes en clientes potenciales."
   }
 }

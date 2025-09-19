@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { _ } from "compiled-i18n";
-import { LuDumbbell, LuSparkles, LuBuilding, LuSliders, LuShoppingBag, LuHome, LuBed, LuHeart, LuBuilding2, LuMapPin, LuGraduationCap, LuUtensils, LuBookOpen } from "@qwikest/icons/lucide";
+import { LuDumbbell, LuSparkles, LuBuilding, LuSliders, LuShoppingBag, LuHome, LuBed, LuHeart, LuBuilding2, LuMapPin, LuGraduationCap, LuUtensils, LuBookOpen, LuPhone, LuCode2, LuSearch } from "@qwikest/icons/lucide";
 
 export default component$(() => {
   return (
@@ -166,40 +166,40 @@ export default component$(() => {
       <section id="services" class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-bold text-slate-700 text-center mb-12">
-            {_`home.offerTitle`}
+            {_`services.process.title`}
           </h2>
           <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl text-white">🎨</span>
+            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
+              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <LuPhone class="text-5xl text-slate-700" />
               </div>
-              <h3 class="text-xl font-semibold text-slate-700 mb-3">
-                {_`home.brandIdentity`}
+              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                {_`services.stage1.title`}
               </h3>
-              <p class="text-slate-500">
-                {_`home.brandDesc`}
+              <p class="text-slate-500 leading-relaxed">
+                {_`services.stage1.desc`}
               </p>
             </div>
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div class="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl text-white">💻</span>
+            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
+              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <LuCode2 class="text-5xl text-slate-700" />
               </div>
-              <h3 class="text-xl font-semibold text-slate-700 mb-3">
-                {_`home.webDev`}
+              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                {_`services.stage2.title`}
               </h3>
-              <p class="text-slate-500">
-                {_`home.webDesc`}
+              <p class="text-slate-500 leading-relaxed">
+                {_`services.stage2.desc`}
               </p>
             </div>
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl text-white">📊</span>
+            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
+              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <LuSearch class="text-5xl text-slate-700" />
               </div>
-              <h3 class="text-xl font-semibold text-slate-700 mb-3">
-                {_`home.digitalStrategy`}
+              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                {_`services.stage3.title`}
               </h3>
-              <p class="text-slate-500">
-                {_`home.strategyDesc`}
+              <p class="text-slate-500 leading-relaxed">
+                {_`services.stage3.desc`}
               </p>
             </div>
           </div>

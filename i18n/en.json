@@ -61,6 +61,13 @@
     "designs.restaurantes": "Web Designs for Restaurants",
     "designs.escuelas": "Web Designs for Schools",
     "designs.cursos": "Web Designs for Courses",
-    "designs.button": "Consult for other design types"
+    "designs.button": "Consult for other design types",
+    "services.process.title": "Our Work Process",
+    "services.stage1.title": "Book a Call",
+    "services.stage1.desc": "In this initial stage, we schedule a call to get to know your business in depth. We analyze your needs and objectives to identify the key elements of your brand and establish the foundations of a successful project.",
+    "services.stage2.title": "Web Design and Development",
+    "services.stage2.desc": "We create your website with a modern and functional design, using the best development practices. We iterate continuously based on your feedback until you are completely satisfied with the final result.",
+    "services.stage3.title": "Digital Strategy",
+    "services.stage3.desc": "We implement an optimized SEO strategy to position your site in the top Google results. We improve the page's speed and usability, focusing on converting visitors into potential customers."
   }
 }
