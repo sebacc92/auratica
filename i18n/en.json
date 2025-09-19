@@ -9,11 +9,10 @@
     "nav.contact": "Contact",
     "footer.copyright": "All rights reserved.",
     "footer.changeLanguage": "Change language",
-    "home.title": "We Make Your Website",
+    "home.title": "Web Design Agency",
     "home.description": "We create your unique, high-quality digital presence that combines strong brand identity with modern, efficient technology.",
     "home.motto": "Your vision, our expertise.",
     "home.wantMyWebsite": "I Want My Website",
-    "home.getStarted": "Free Consultation",
     "home.offerTitle": "What We Offer",
     "home.brandIdentity": "Brand Identity",
     "home.brandDesc": "Develop a compelling brand that resonates with your audience.",
@@ -51,6 +50,17 @@
     "contact.name": "Name",
     "contact.email": "Email",
     "contact.message": "Message",
-    "contact.send": "Send Message"
+    "contact.send": "Send Message",
+    "designs.title": "Web Design Plans",
+    "designs.description": "Choose the type of website that best suits your business.",
+    "designs.emprendedores": "Web Designs for Entrepreneurs",
+    "designs.inmobiliarias": "Web Designs for Real Estate",
+    "designs.hoteles": "Web Designs for Hotels",
+    "designs.autogestionable": "Self-Managed Web Designs",
+    "designs.pymes": "Web Designs for SMEs",
+    "designs.restaurantes": "Web Designs for Restaurants",
+    "designs.escuelas": "Web Designs for Schools",
+    "designs.cursos": "Web Designs for Courses",
+    "designs.button": "Consult for other design types"
   }
 }

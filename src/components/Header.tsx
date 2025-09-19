@@ -12,11 +12,11 @@ export default component$(() => {
   ];
 
   return (
-    <header class="fixed top-0 w-full z-50 bg-white shadow">
+    <header class="fixed top-0 w-full z-50 bg-blue-800 shadow-lg text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <Link href="#home" class="text-xl font-bold text-gray-900">
+            <Link href="#home" class="text-xl font-bold text-white">
               Aurática
             </Link>
           </div>
@@ -25,7 +25,7 @@ export default component$(() => {
               <Link
                 key={item.name}
                 href={item.href}
-                class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                class="text-slate-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
               >
                 {item.name}
               </Link>

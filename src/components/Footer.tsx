@@ -7,7 +7,7 @@ export default component$(() => {
   const otherLocale = locales.find(l => l !== currentLocale) || currentLocale;
 
   return (
-    <footer class="bg-gray-800 text-white">
+    <footer class="bg-blue-800 text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="flex justify-between items-center">
           <div class="text-sm">
@@ -15,7 +15,7 @@ export default component$(() => {
           </div>
           <Link
             href={`/${otherLocale}`}
-            class="text-sm hover:text-gray-300"
+            class="text-sm text-emerald-400 hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
           >
             {_`footer.changeLanguage`}
           </Link>
