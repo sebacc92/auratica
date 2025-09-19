@@ -1,9 +1,10 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { _ } from "compiled-i18n";
-import { LuDumbbell, LuSparkles, LuBuilding, LuSliders, LuShoppingBag, LuHome, LuBed, LuHeart, LuBuilding2, LuMapPin, LuGraduationCap, LuUtensils, LuBookOpen, LuPhone, LuCode2, LuSearch } from "@qwikest/icons/lucide";
+import { LuCalculator, LuScale, LuHeadphones, LuCamera, LuApple, LuStethoscope, LuEye, LuZap, LuWind, LuSparkles, LuBuilding, LuSliders, LuShoppingBag, LuHome, LuBed, LuHeart, LuBuilding2, LuMapPin, LuGraduationCap, LuUtensils, LuBookOpen, LuPhone, LuCode2, LuSearch, LuDumbbell, LuGlobe } from "@qwikest/icons/lucide";
 
 export default component$(() => {
+  const activeTab = useSignal('business');
   return (
     <div class="min-h-screen bg-slate-50">
       {/* Hero Section - Home */}
@@ -15,7 +16,6 @@ export default component$(() => {
               <h1 class="text-4xl md:text-6xl font-bold mb-6">
                 {_`home.title`}
               </h1>
-              <LuDumbbell class="w-12 h-12 text-white mb-4" />
               <p class="text-xl md:text-2xl max-w-3xl mb-6 leading-relaxed">
                 {_`home.description`}
               </p>
@@ -53,104 +53,220 @@ export default component$(() => {
               {_`designs.description`}
             </p>
           </div>
-          <div class="grid md:grid-cols-4 gap-6 mb-12">
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuSparkles class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.emprendedores`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuBuilding class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.empresas`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuSliders class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.autogestionables`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuShoppingBag class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.tiendas`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuHome class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.inmobiliarias`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuBed class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.hoteles`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuHeart class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.prepagas`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuBuilding2 class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.pymes`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuMapPin class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.barriosCerrados`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuGraduationCap class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.escuelas`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuUtensils class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.restaurantes`}
-              </h3>
-            </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuBookOpen class="text-5xl text-slate-700" />
-              </div>
-              <h3 class="text-2xl font-semibold text-slate-700 mb-4">
-                {_`designs.cursos`}
-              </h3>
-            </div>
+          <div class="flex justify-center mb-8 space-x-4">
+            <button
+              onClick$={() => activeTab.value = 'business'}
+              class={activeTab.value === 'business' ? 'bg-orange-600 text-white px-6 py-2 rounded-t-md font-semibold border-b-2 border-orange-600' : 'bg-slate-200 text-slate-700 px-6 py-2 rounded-t-md font-semibold border-b-2 border-slate-200 hover:bg-slate-300 transition'}
+            >
+              {_`designs.tabs.business`}
+            </button>
+            <button
+              onClick$={() => activeTab.value = 'professionals'}
+              class={activeTab.value === 'professionals' ? 'bg-orange-600 text-white px-6 py-2 rounded-t-md font-semibold border-b-2 border-orange-600' : 'bg-slate-200 text-slate-700 px-6 py-2 rounded-t-md font-semibold border-b-2 border-slate-200 hover:bg-slate-300 transition'}
+            >
+              {_`designs.tabs.professionals`}
+            </button>
           </div>
+          {activeTab.value === 'business' && (
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuSparkles class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.emprendedores`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuBuilding class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.empresas`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuSliders class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.autogestionables`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuShoppingBag class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.tiendas`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuHome class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.inmobiliarias`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuBed class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.hoteles`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuHeart class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.prepagas`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuBuilding2 class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.pymes`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuMapPin class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.barriosCerrados`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuGraduationCap class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.escuelas`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuUtensils class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.restaurantes`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuBookOpen class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.cursos`}
+                </h3>
+              </div>
+            </div>
+          )}
+          {activeTab.value === 'professionals' && (
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuCalculator class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.contadores`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuScale class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.abogados`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuHeadphones class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.psicologos`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuCamera class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.fotografos`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuApple class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.nutricionistas`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuDumbbell class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.entrenadores`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuStethoscope class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.medicos`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuEye class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.oftamologicos`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuHeart class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.odontologos`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuGlobe class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.traductores`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuZap class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.electricistas`}
+                </h3>
+              </div>
+              <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+                <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <LuWind class="text-3xl text-slate-700" />
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-700 mb-4">
+                  {_`designs.professionals.tecnicosAA`}
+                </h3>
+              </div>
+            </div>
+          )}
           <div class="text-center">
             <Link
               href="#contact"
@@ -169,9 +285,9 @@ export default component$(() => {
             {_`services.process.title`}
           </h2>
           <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuPhone class="text-5xl text-slate-700" />
+            <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+              <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <LuPhone class="text-3xl text-slate-700" />
               </div>
               <h3 class="text-2xl font-semibold text-slate-700 mb-4">
                 {_`services.stage1.title`}
@@ -180,9 +296,9 @@ export default component$(() => {
                 {_`services.stage1.desc`}
               </p>
             </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuCode2 class="text-5xl text-slate-700" />
+            <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+              <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <LuCode2 class="text-3xl text-slate-700" />
               </div>
               <h3 class="text-2xl font-semibold text-slate-700 mb-4">
                 {_`services.stage2.title`}
@@ -191,9 +307,9 @@ export default component$(() => {
                 {_`services.stage2.desc`}
               </p>
             </div>
-            <div class="bg-slate-50 rounded-lg p-8 text-center border border-slate-200 cursor-pointer shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)]">
-              <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LuSearch class="text-5xl text-slate-700" />
+            <div class="bg-white rounded-lg p-6 text-center border border-slate-200 cursor-pointer shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.8)] transition-shadow duration-200 hover:shadow-[3px_3px_6px_rgba(0,0,0,0.1),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+              <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <LuSearch class="text-3xl text-slate-700" />
               </div>
               <h3 class="text-2xl font-semibold text-slate-700 mb-4">
                 {_`services.stage3.title`}
@@ -207,7 +323,7 @@ export default component$(() => {
       </section>
 
       {/* About Section */}
-      <section id="about" class="bg-slate-50 py-20">
+      <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-4xl font-bold text-slate-700 mb-4">
@@ -281,68 +397,6 @@ export default component$(() => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-slate-700 mb-4">
-              {_`projects.title`}
-            </h2>
-            <p class="text-xl text-slate-500 max-w-3xl mx-auto">
-              {_`projects.heroDesc`}
-            </p>
-          </div>
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-slate-50 rounded-lg shadow-lg p-6 text-center">
-              <div class="w-16 h-16 bg-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl text-white">1</span>
-              </div>
-              <h3 class="text-2xl font-bold text-slate-700 mb-4">
-                {_`projects.stage1Title`}
-              </h3>
-              <p class="text-slate-500 leading-relaxed">
-                {_`projects.stage1Desc`}
-              </p>
-            </div>
-            <div class="bg-slate-50 rounded-lg shadow-lg p-6 text-center">
-              <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl text-white">2</span>
-              </div>
-              <h3 class="text-2xl font-bold text-slate-700 mb-4">
-                {_`projects.stage2Title`}
-              </h3>
-              <p class="text-slate-500 leading-relaxed">
-                {_`projects.stage2Desc`}
-              </p>
-            </div>
-            <div class="bg-slate-50 rounded-lg shadow-lg p-6 text-center">
-              <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl text-white">3</span>
-              </div>
-              <h3 class="text-2xl font-bold text-slate-700 mb-4">
-                {_`projects.stage3Title`}
-              </h3>
-              <p class="text-slate-500 leading-relaxed">
-                {_`projects.stage3Desc`}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section id="process" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-4xl font-bold text-slate-700 mb-8">
-            {_`process.title`}
-          </h2>
-          <p class="text-xl text-slate-500 max-w-3xl mx-auto">
-            {_`process.desc`}
-          </p>
-          {/* Detailed process content can be added here */}
         </div>
       </section>
 
